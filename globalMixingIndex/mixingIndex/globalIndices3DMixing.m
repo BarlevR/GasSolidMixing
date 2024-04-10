@@ -15,7 +15,7 @@
 
 % The volume fraction of two fluidized bed reactor designs are given for
 % each second, and is located in: 
-%   ../../CFDData/biomassSandMixingFluidizedBed
+%   ../../CFDdata/biomassSandMixingFluidizedBed
 % The files have the same names so change design name in script as needed
 %   (design1 and design2)
 
@@ -34,7 +34,7 @@ clc
 
 %% load and set data
 
-load ../../CFDData/biomassSandMixingFluidizedBed/design1/alpha10.txt
+load ../../CFDdata/biomassSandMixingFluidizedBed/design1/alpha10.txt
 
 alpha = alpha10;
 p1 = alpha(:,1); % Sand
