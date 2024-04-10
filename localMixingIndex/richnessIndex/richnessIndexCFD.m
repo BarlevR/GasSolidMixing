@@ -41,7 +41,7 @@ P1 = reshape(p1,180,420)'; % phase 1
 P2 = reshape(p2,180,420)'; % phase 2
 P = reshape(p,180,420)'; % total volume fraction
 
-% plot of particle phase 1
+% Plot of particle phase 1
 figure(1)
 surf(x,y,P1,'EdgeColor', 'none')
 view(0,90)
@@ -55,7 +55,7 @@ colormap(jet(1024))
 clim([0 0.45])
 set(gca,'FontSize',14)
 
-% plot of particle phase 2
+% Plot of particle phase 2
 figure(2)
 surf(x,y,P2,'EdgeColor', 'none')
 view(0,90)
@@ -69,7 +69,7 @@ colormap(jet(1024))
 clim([0 0.45])
 set(gca,'FontSize',14)
 
-% plot of total particle phase
+% Plot of total particle phase
 figure(3)
 surf(x,y,P,'EdgeColor', 'none')
 view(0,90)

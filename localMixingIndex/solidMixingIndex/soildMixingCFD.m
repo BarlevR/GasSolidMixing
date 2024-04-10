@@ -69,7 +69,7 @@ for j = 1:Nx
     end
 end
 
-
+% Plot solid fraction field
 figure(2)
 surf(x,y,xi,'EdgeColor', 'none')
 view(0,90)
@@ -83,7 +83,7 @@ ylabel('Y, m')
 title('Solid fraction')
 set(gca,'FontSize',14)
 
-%% Calculate the solid fraction field
+%% Calculate the solid mixing index
 
 % Compute volume average of solid fraciton phase 
 % for the region where particles exist
@@ -119,9 +119,9 @@ for j = 1:Nx
     end
 end
 
+% Plot solid mixing index 
 figure(3)
 surf(x,y,M,'EdgeColor', 'none')
-%mesh(x,y,Xi)
 view(0,90)
 axis([-0.06 0.06 0 0.5])
 daspect([1 1 1])

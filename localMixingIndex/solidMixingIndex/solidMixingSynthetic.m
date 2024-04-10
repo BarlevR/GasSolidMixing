@@ -33,6 +33,7 @@ for j = 1:Nx
         f(k,j) = (sin(2*pi*x(j)/100).*sin(2*pi*y(k)/100) + A1*sin(2*pi*x(j)/10).*sin(2*pi*y(k)/10) + A2*sin(2*pi*x(j)/1).*sin(2*pi*y(k)/1));
     end
 end
+
 % Scale test function between a and b to mimic  particle phase 
 % max[a,b]: [0,1]
 a = 0.1;
@@ -61,7 +62,7 @@ daspect([1 1 1])
 axis ([0 50 0 100])
 set(gca,'FontSize',14)
 
-%% Calculate the richness Index
+%% Calculate the solid mixing index
 
 
 f_mean = mean(mean(f));

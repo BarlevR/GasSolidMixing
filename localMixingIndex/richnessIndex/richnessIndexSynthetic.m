@@ -58,7 +58,7 @@ daspect([1 1 1])
 axis ([0 50 0 100])
 set(gca,'FontSize',14)
 
-%% Calculate the richness Index
+%% Calculate the richness index
 
 
 f_mean = mean(mean(f));
