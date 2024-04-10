@@ -3,7 +3,7 @@
 % Accessed region solid mixing index for solid-solid mixing
 % Synthetic field
 
-% Authors: Barlev R. Nagawkar, Iowa State University
+% Author: Barlev R. Nagawkar, Iowa State University
 % ------------------------------------------------------------------------
 
 clear

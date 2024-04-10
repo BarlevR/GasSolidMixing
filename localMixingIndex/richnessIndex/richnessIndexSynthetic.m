@@ -3,7 +3,7 @@
 % Richness index for gas-solid mixing
 % Synthetic field
 
-% Authors: Barlev R. Nagawkar, Iowa State University
+% Author: Barlev R. Nagawkar, Iowa State University
 % ------------------------------------------------------------------------
 
 clear 

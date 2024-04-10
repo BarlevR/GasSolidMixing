@@ -9,7 +9,7 @@
 
 % CFD segregation of particles on a 2D uniform mesh
 
-% Authors: Barlev R. Nagawkar, Iowa State University
+% Author: Barlev R. Nagawkar, Iowa State University
 
 % Reference: 
 %   Nagawkar BR, Kotrike VP, Passalacqua A, Subramaniam S. 

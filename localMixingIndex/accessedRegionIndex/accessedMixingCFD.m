@@ -3,7 +3,7 @@
 % Accessed region solid index for solid-solid mixing
 % Segregation of particles
 
-% Authors: Barlev R. Nagawkar, Iowa State University
+% Author: Barlev R. Nagawkar, Iowa State University
 
 % Reference: 
 %   Nagawkar BR, Kotrike VP, Passalacqua A, Subramaniam S. 
