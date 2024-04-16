@@ -58,6 +58,14 @@ set(gca,'FontSize',14)
 % Solid fraction
 xi = P1./(P1+P2);
 
+for j = 1:Nx
+    for i = 1:Ny
+        if isnan(xi(i,j))
+            xi(i,j) = 0;
+        end
+    end
+end
+
 % Clip region with no particles for plotting
 Xi = zeros(Ny,Nx);
 for j = 1:Nx
