@@ -190,20 +190,18 @@ set(gca,'FontSize',14)
 
 A = zeros(Ny,Nx); % initialize
 
-% Select accessed region range [a_min, a_max]
-a_min = 0.3;
-a_max = 0.7;
-a_mean = Xi_f_mean;
-a = Xi_f;
+% Select accessed region range [Xi_f_min, Xi_f_max]
+Xi_f_min = 0.3;
+Xi_f_max = 0.7;
  
 for j = 1:Nx
     for k = 1:Ny
-        if a(k,j) < a_min
+        if Xi_f(k,j) < Xi_f_min
            A(k,j) = 0; 
-        elseif (a(k,j)>= a_min && a(k,j) < a_mean)
-            A(k,j) =  (a(k,j) - a_min)/(2*(a_mean - a_min));
-        elseif (a(k,j) >= a_mean && a(k,j) < a_max)
-            A(k,j) = 1 - (a_max - a(k,j))/(2*(a_max - a_mean));
+        elseif (Xi_f(k,j)>= Xi_f_min && Xi_f(k,j) < Xi_f_mean)
+            A(k,j) =  (Xi_f(k,j) - Xi_f_min)/(2*(Xi_f_mean - Xi_f_min));
+        elseif (Xi_f(k,j) >= Xi_f_mean && Xi_f(k,j) < Xi_f_max)
+            A(k,j) = 1 - (Xi_f_max - Xi_f(k,j))/(2*(Xi_f_max - Xi_f_mean));
         else
             A(k,j) = 1;
         end
