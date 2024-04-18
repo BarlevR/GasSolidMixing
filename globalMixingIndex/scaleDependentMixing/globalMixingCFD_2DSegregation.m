@@ -39,18 +39,18 @@ P2 = reshape(p2,180,420)'; % phase 2
 P = reshape(p,180,420)'; % total volume fraction
 
 % plot of particle phase 1
-% figure(1)
-% surf(x,y,P1,'EdgeColor', 'none')
-% view(0,90)
-% axis([-0.06 0.06 0 0.5])
-% daspect([1 1 1])
-% xlabel('X, m')
-% ylabel('Y, m')
-% title('Volume fraction Phase 1')
-% colorbar
-% colormap(jet(1024))
-% clim([0 0.45])
-% set(gca,'FontSize',14)
+figure(1)
+surf(x,y,P1,'EdgeColor', 'none')
+view(0,90)
+axis([-0.06 0.06 0 0.5])
+daspect([1 1 1])
+xlabel('X, m')
+ylabel('Y, m')
+title('Volume fraction Phase 1')
+colorbar
+colormap(jet(1024))
+clim([0 0.45])
+set(gca,'FontSize',14)
 
 %% Calculate and plot solid fraciton field
 
@@ -90,10 +90,6 @@ for j = 1:nx
     end
 end
 G = G/Gsum;
-
-%Plot filter fucntion
-% figure(3)
-% surf(r,s,G,'EdgeColor', 'none')
 
 %% Filter solid fraction and plot
 
